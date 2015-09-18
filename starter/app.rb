@@ -4,8 +4,8 @@ require 'sinatra/reloader'
 enable :sessions
 
 before do
-
-
+	session[:growl_list] ||= []
+	@growl_list = session[:growl_list]
 end
 
 
@@ -21,9 +21,10 @@ get '/growl' do
 end
 
 post '/growl' do
-	session[:growl_list] ||= []
-	@growl_list = session[:growl_list]
+	# @growl_list = session[:growl_list]
 	session[:growl_list] << params[:new_growl]
 	puts @growl_list[0..-1]
+	redirect '/'
 	erb :growl
 end
+
