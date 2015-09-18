@@ -1,7 +1,7 @@
 <div id="growls" class="row">
 	<div class="col-sm-2"></div>
 	<ul class="col-sm-8">
-		<% @growl_list.each do |item| %>
+		<% @growl_list.reverse.each do |item| %>
 		<li><%= item %></li>
 		<% end %>
 	</ul>
@@ -11,5 +11,6 @@
 	<div class="col-sm-4"></div>
 	<form class="col-sm-4"method="get" action="/growl">
 		<button type="submit">Enter a new Growl</button>
-	</form>	
+	</form>
 </div>
+<audio autoplay= "true" src="growl.mp3">
