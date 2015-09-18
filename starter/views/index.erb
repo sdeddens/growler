@@ -1,7 +1,15 @@
-
-	<ul>
+<div id="growls" class="row">
+	<div class="col-sm-2"></div>
+	<ul class="col-sm-8">
 		<% @growl_list.each do |item| %>
 		<li><%= item %></li>
 		<% end %>
 	</ul>
-	<a href="/growl">Enter a new Growl</a>
+	<div class="col-sm-2"></div>
+</div>
+<div class="row">
+	<div class="col-sm-4"></div>
+	<form class="col-sm-4"method="get" action="/growl">
+		<button type="submit">Enter a new Growl</button>
+	</form>	
+</div>
