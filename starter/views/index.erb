@@ -1,7 +1,7 @@
 <div id="growls" class="row">
 	<div class="col-sm-2"></div>
 	<ul class="col-sm-8">
-		<% @growl_list.each do |item| %>
+		<% @growl_list.reverse.each do |item| %>
 		<li><%= item %></li>
 		<% end %>
 	</ul>
