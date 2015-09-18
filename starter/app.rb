@@ -1,7 +1,9 @@
 require 'sinatra'
 require 'sinatra/reloader'
-	
-before do	
+
+enable :sessions
+
+before do
 
 
 end
@@ -19,6 +21,9 @@ get '/growl' do
 end
 
 post '/growl' do
-
+	session[:growl_list] ||= []
+	@growl_list = session[:growl_list]
+	session[:growl_list] << params[:new_growl]
+	puts @growl_list[0..-1]
 	erb :growl
 end
