@@ -21,10 +21,11 @@ get '/growl' do
 end
 
 post '/growl' do
-	# @growl_list = session[:growl_list]
 	session[:growl_list] << params[:new_growl]
-	puts @growl_list[0..-1]
 	redirect '/'
 	erb :growl
 end
+
+
+
 

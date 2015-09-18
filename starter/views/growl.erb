@@ -1,4 +1,21 @@
-<form id="growl" method="post" action="/growl">
-	<input name = "new_growl" maxlength="142" autofocus = "true" placeholder="Type your Growl here">
-</form>
-<button type="submit" form="growl" name="submit">Submit</button>
+<div class="row">
+	<div class="col-sm-2"></div>
+	<form 	class="col-sm-8"
+			id="growl" 
+			method="post" 
+			action="/growl">
+
+		<input 	name = "new_growl" 
+				maxlength="142" 
+				autofocus = "true" 
+				placeholder="Type your Growl here">
+	</form>
+</div>
+<div class="row">
+	<div class="col-sm-4"></div>
+	<button id="submit"
+			class="col-sm-4"
+			type="submit" 
+			form="growl" 
+			name="submit">Submit</button>
+</div>
