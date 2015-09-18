@@ -10,5 +10,15 @@ end
 # Routes
 get '/' do
 
-erb :index
+	erb :index
+end
+
+get '/growl' do
+
+	erb :growl
+end
+
+post '/growl' do
+
+	erb :growl
 end
