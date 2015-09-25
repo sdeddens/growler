@@ -1,7 +1,11 @@
 
 header {
 	height: 200px;
-	background-color: gray;
+	background-color: transparent;
+	margin-top: 5px;
+}
+body {
+	background: url("http://www.encounterthewild.com/wp-content/uploads/2013/08/Sunset-Kenya.jpg") no-repeat center -2400px;
 }
 img {
 	margin: 0px;
@@ -21,6 +25,8 @@ ul {
 	height: 200px;
 	overflow: auto;
 	max-width: 100%;
+	font-size: 30px;
+
 }
 input {
 	height: 100px;
@@ -39,4 +45,10 @@ input {
 }
 #growl {
 	font-size: 50px;
+}
+#tiger {
+	border-radius: 15%;
+}
+li {
+	color: #CCA300;
 }
